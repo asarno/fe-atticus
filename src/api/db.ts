@@ -20,7 +20,7 @@ interface PlaylistDatabase {
   [key: string]: PlaylistEntry;
 }
 
-interface SongDatabase {
+export interface SongDatabase {
   [key: string]: AtticusSong;
 }
 
@@ -35,7 +35,7 @@ const songDB: SongDatabase = {
       trackNumber: 1,
       discNumber: 1,
       path: 'foo',
-      albumArt: 'artist-1-album-1.jpg',
+      albumArt: "https://is2-ssl.mzstatic.com/image/thumb/Music128/v4/69/0f/1c/690f1c32-c65d-b4bc-457c-d2682766761b/00050087319175.rgb.jpg/170x170bb.png",
   },
   2: {
     id: '2',
@@ -47,7 +47,7 @@ const songDB: SongDatabase = {
     trackNumber: 2,
     discNumber: 1,
     path: 'bar',
-    albumArt: 'artist-1-album-1.jpg',
+    albumArt: 'https://is1-ssl.mzstatic.com/image/thumb/Music118/v4/b1/cc/c3/b1ccc3ca-cef3-b072-482b-cf53674a858c/886447315088.jpg/170x170bb.png',
   },
   3: {
     id: '3',
@@ -59,7 +59,7 @@ const songDB: SongDatabase = {
     trackNumber: 1,
     discNumber: 1,
     path: 'baz',
-    albumArt: 'artist-2-album-2.jpg',
+    albumArt: "https://is4-ssl.mzstatic.com/image/thumb/Music114/v4/97/e6/70/97e670f6-361b-a23d-617a-52bafcd631cd/075679854247.jpg/170x170bb.png",
   },
 };
 

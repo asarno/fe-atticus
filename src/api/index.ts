@@ -5,6 +5,11 @@ import { AtticusSong, PlaylistEntry } from './db';
 const { songs } = dbs;
 const { playlists } = dbs;
 
+export async function listSongs(): Promise<any> {
+  const { songs } = dbs;
+  return Promise.resolve(songs);
+}
+
 async function getSong(songId: string): Promise<AtticusSong> {
   return Promise.resolve(songs[songId]);
 }
