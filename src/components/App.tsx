@@ -1,5 +1,5 @@
 import React from 'react';
-import Home from './Home';
+import AllSongs from './AllSongs';
 import Favorites from './Favorites';
 import NotFound from './NotFound';
 import ErrorBoundary from './ErrorBoundary';
@@ -22,9 +22,9 @@ const AuthedRoutes: React.FC = () => {
             location={location.pathname}
         >
             <Switch>
-                <Route exact path="/home" component={Home} />
+                <Route exact path="/all" component={AllSongs} />
                 <Route exact path="/favorites" component={Favorites} />
-                <Route exact path="/" component={Home} />
+                <Route exact path="/" component={AllSongs} />
 
                 <Route component={NotFound} />
             </Switch>

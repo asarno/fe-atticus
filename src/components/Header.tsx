@@ -24,10 +24,10 @@ function Header() {
             </LeftContainer>
             <RightContainer>
                 <NavItem
-                    isSelected={location.pathname === '/home'}
-                    onClick={() => history.push('/home')}
+                    isSelected={location.pathname === '/all'}
+                    onClick={() => history.push('/all')}
                 >
-                    home
+                    all
                  </NavItem>
                 <NavItem
                     isSelected={location.pathname === '/favorites'}

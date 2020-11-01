@@ -21,7 +21,7 @@ interface Props {
 
 const Loader = ({
     isLoading,
-    isFullscreen = false,
+    isFullscreen = true,
     color = '#1872e0',
     size = 50,
 }: Props) => (
